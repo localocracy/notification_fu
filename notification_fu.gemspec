@@ -18,22 +18,22 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION.yml",
-     "generators/timeline_fu/USAGE",
-     "generators/timeline_fu/templates/migration.rb",
-     "generators/timeline_fu/templates/model.rb",
-     "generators/timeline_fu/timeline_fu_generator.rb",
+     "generators/notification_fu/USAGE",
+     "generators/notification_fu/templates/migration.rb",
+     "generators/notification_fu/templates/model.rb",
+     "generators/notification_fu/timeline_fu_generator.rb",
      "init.rb",
-     "lib/timeline_fu.rb",
-     "lib/timeline_fu/fires.rb",
-     "lib/timeline_fu/macros.rb",
-     "lib/timeline_fu/matchers.rb",
-     "shoulda_macros/timeline_fu_shoulda.rb",
+     "lib/notification_fu.rb",
+     "lib/notification_fu/fires.rb",
+     "lib/notification_fu/macros.rb",
+     "lib/notification_fu/matchers.rb",
+     "shoulda_macros/notification_fu_shoulda.rb",
      "test/fires_test.rb",
      "test/test_helper.rb",
-     "timeline_fu.gemspec"
+     "notification_fu.gemspec"
   ]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/giraffesoft/timeline_fu}
+  s.homepage = %q{http://github.com/localocracy/notification_fu}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.1}

@@ -1,4 +1,4 @@
-module TimelineFu
+module NotificationFu
   module Macros
     def should_fire_event(event_type, opts = {})
       should "fire #{event_type} on #{opts[:on]}" do

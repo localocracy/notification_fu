@@ -3,9 +3,9 @@ require 'timeline_fu/macros'
 
 module ActiveSupport
   class TestCase
-    include TimelineFu::Matchers
+    include NotificationFu::Matchers
     if ! defined? Spec
-      extend TimelineFu::Macros
+      extend NotificationFu::Macros
     end
   end
 end

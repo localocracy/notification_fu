@@ -1,4 +1,4 @@
-module TimelineFu
+module NotificationFu
   module Matchers
     class FireEvent
       def initialize(event_type, opts = {})
