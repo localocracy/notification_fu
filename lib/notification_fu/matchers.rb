@@ -1,10 +1,10 @@
 module NotificationFu
   module Matchers
-    class FireEvent
+    class NotifyEvent
       def initialize(event_type, opts = {})
         @event_type = event_type
         @opts = opts
-        @method = :"fire_#{@event_type}_after_#{@opts[:on]}"
+        @method = :"notify_#{@event_type}_after_#{@opts[:on]}"
       end
 
       def matches?(subject)
@@ -34,7 +34,7 @@ module NotificationFu
       end
 
       def description
-        "fire a #{@event_type} event"
+        "Notify a #{@event_type} event"
       end
 
       def expectation
@@ -51,8 +51,8 @@ module NotificationFu
 
     end
 
-    def fire_event(event_type, opts)
-      FireEvent.new(event_type, opts)
+    def notify_event(event_type, opts)
+      NotifyEvent.new(event_type, opts)
     end
   end
 end
