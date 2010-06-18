@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{timeline_fu}
-  s.version = "0.3.0"
+  s.name = %q{notification_fu}
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Golick", "Mathieu Martin", "Francois Beausoleil"]
@@ -24,11 +24,11 @@ Gem::Specification.new do |s|
      "generators/notification_fu/timeline_fu_generator.rb",
      "init.rb",
      "lib/notification_fu.rb",
-     "lib/notification_fu/fires.rb",
+     "lib/notification_fu/notifies.rb",
      "lib/notification_fu/macros.rb",
      "lib/notification_fu/matchers.rb",
      "shoulda_macros/notification_fu_shoulda.rb",
-     "test/fires_test.rb",
+     "test/notifies_test.rb",
      "test/test_helper.rb",
      "notification_fu.gemspec"
   ]
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{Easily build timelines, much like GitHub's news feed}
   s.test_files = [
-    "test/fires_test.rb",
+    "test/notifies_test.rb",
      "test/test_helper.rb"
   ]
 
